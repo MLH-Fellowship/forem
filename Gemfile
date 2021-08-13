@@ -87,7 +87,7 @@ gem "rpush-redis", "~> 1.1" # Redis module capability for rpush library
 # We need to investigate why exactly, in the meantime we are hardcoding these two transitive dependencies
 # (added by redis-rails) to keep them at the latest working version
 gem "redis-actionpack", "5.1.0" # Redis session store for ActionPack. Used for storing the Rails session in Redis.
-gem "redis-rack", "2.0.6" # Redis Store for Rack applications
+gem "redis-rack", "2.1.3" # Redis Store for Rack applications
 
 gem "redis-rails", "~> 5.0.2" # Redis for Ruby on Rails
 gem "request_store", "~> 1.5" # RequestStore gives you per-request global storage
@@ -147,7 +147,7 @@ group :development, :test do
   gem "knapsack_pro", "~> 3.0.0" # Help parallelize Ruby spec builds
   gem "pry-byebug", "~> 3.8" # Combine 'pry' with 'byebug'. Adds 'step', 'next', 'finish', 'continue' and 'break' commands to control execution
   gem "rspec-rails", "~> 5.0" # rspec-rails is a testing framework for Rails 3+
-  gem "rubocop", "~> 1.18", require: false # Automatic Ruby code style checking tool
+  gem "rubocop", "~> 1.19", require: false # Automatic Ruby code style checking tool
   gem "rubocop-performance", "~> 1.11", require: false # A collection of RuboCop cops to check for performance optimizations in Ruby code
   gem "rubocop-rails", "~> 2.11", require: false # Automatic Rails code style checking tool
   gem "rubocop-rspec", "~> 2.4", require: false # Code style checking for RSpec files
